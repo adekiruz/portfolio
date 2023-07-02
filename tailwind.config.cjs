@@ -1,5 +1,6 @@
 import { join } from 'path';
 import skeleton from '@skeletonlabs/skeleton/tailwind/skeleton.cjs';
+import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config}*/
 const config = {
@@ -10,7 +11,7 @@ const config = {
 		extend: {}
 	},
 
-	plugins: [ ...skeleton() ]
+	plugins: [ ...skeleton(), daisyui ]
 };
 
 module.exports = config;
