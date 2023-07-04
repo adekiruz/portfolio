@@ -7,6 +7,7 @@
 
 	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
 	import '../app.postcss';
-</script>
 
-<slot />
+	// Your custom Skeleton theme:
+	import '../theme.postcss';
+</script>
