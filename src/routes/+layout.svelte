@@ -11,18 +11,8 @@
 	// Your custom Skeleton theme:
 	import '../theme.postcss';
 
-	import {
-		Drawer,
-		Modal,
-		Toast,
-		drawerStore
-	} from '@skeletonlabs/skeleton';
+	import { Drawer, Modal, Toast } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
-
-	function drawerOpen() {
-		console.log(drawerStore.open);
-		drawerStore.open();
-	}
 </script>
 
 <Drawer width="w-1/2">
