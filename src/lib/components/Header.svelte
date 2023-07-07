@@ -18,8 +18,8 @@
                 </svg>
             </span>
         </button>
-        <a href="/">
-            <strong class="text-xl uppercase">boilerplate</strong>
+        <a href="">
+            <strong class="text-xl uppercase">portfolio</strong>
         </a>
     </svelte:fragment>
     <svelte:fragment slot="trail">

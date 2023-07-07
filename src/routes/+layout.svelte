@@ -10,16 +10,23 @@
 
 	// Your custom Skeleton theme:
 	import '../theme.postcss';
-
-	import { Drawer, Modal, Toast } from '@skeletonlabs/skeleton';
-	import Navigation from '$lib/components/Navigation.svelte';
+	import { AppShell } from '@skeletonlabs/skeleton';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Drawer width="w-1/2">
-	<Navigation />
-</Drawer>
+<AppShell>
+	<svelte:fragment slot="pageHeader">
+		<Header />
+	</svelte:fragment>
 
-<Modal />
-<Toast />
+	<!-- content -->
+	<div class="container mx-auto p-3">
+		<slot />
+	</div>
 
-<slot />
+	<!-- footer -->
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
+</AppShell>
