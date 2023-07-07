@@ -4,10 +4,11 @@
 
 <AppBar>
 	<svelte:fragment slot="lead">
-		<strong class="text-xl uppercase">boilerplate</strong>
+		<a href="/">
+			<strong class="text-xl uppercase">boilerplate</strong>
+		</a>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
 		<LightSwitch />
-		<a href="/login">Login</a>
 	</svelte:fragment>
 </AppBar>
